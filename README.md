@@ -109,6 +109,23 @@ Medications
 Clinical diagnoses
 Depression scales (GDS)
 Quality of life measures
+
+
+Multimodal Biomarker Integration ⭐⭐⭐⭐⭐
+Why Popular:
+
+Combines imaging + CSF + genetics + cognition
+Realistic clinical scenario
+Better predictive power
+Cutting-edge research
+Typical Approach:
+
+Imaging (MRI volumes, white matter)
+CSF biomarkers (Aβ42, tau, p-tau)
+Blood biomarkers (phospho-tau, NfL)
+Genetics (APOE4, polygenic risk)
+→ Predict: diagnosis, progression, conversion
+Potential: EXTREMELY HIGH
 E. Genetic Data
 Whole Genome Sequencing (WGS) - Later phases
 APOE genotyping - Universal
