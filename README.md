@@ -131,3 +131,11 @@ Whole Genome Sequencing (WGS) - Later phases
 APOE genotyping - Universal
 SNP data - For genome-wide association studies (GWAS)
 Includes: ~1,500+ participants with genetic data
+
+
+Something like this
+TITLE:
+
+"Multimodal Machine Learning for Predicting Progression from MCI to 
+Alzheimer's Disease: Combining Structural MRI and Cerebrospinal Fluid 
+Biomarkers in the ADNI Cohort
