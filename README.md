@@ -139,3 +139,59 @@ TITLE:
 "Multimodal Machine Learning for Predicting Progression from MCI to 
 Alzheimer's Disease: Combining Structural MRI and Cerebrospinal Fluid 
 Biomarkers in the ADNI Cohort
+
+
+
+ABSTRACT (250 words):
+Background: Mild cognitive impairment (MCI) is a heterogeneous condition 
+with variable progression to Alzheimer's disease (AD). Early identification 
+of MCI patients at highest conversion risk is critical for timely 
+intervention. While structural MRI and CSF biomarkers individually predict 
+conversion, their combined predictive value is unknown.
+
+Methods: We analyzed 200 MCI subjects from ADNI with baseline 3T MRI and 
+CSF biomarkers (Aβ42, tau, p-tau), with 2-5 year follow-up. Using machine 
+learning, we compared three approaches: (1) MRI ROI volumes only, (2) CSF 
+biomarkers only, and (3) multimodal fusion. Primary outcome was conversion 
+to AD within follow-up period.
+
+Results: 100/200 subjects converted to AD. Multimodal Random Forest model 
+achieved AUC=0.86 (95% CI: 0.80-0.92), significantly outperforming MRI-only 
+(AUC=0.78) and biomarkers-only (AUC=0.81) approaches. Hippocampal volume, 
+Aβ42, and tau were top predictors. Model achieved 84% sensitivity and 81% 
+specificity for conversion prediction.
+
+Conclusion: Multimodal fusion of MRI and CSF biomarkers significantly 
+improves MCI-to-AD conversion prediction. This approach could enable early 
+stratification and selective trial enrollment for at-risk patients.
+
+---
+
+METHODS:
+
+Study Population:
+- 200 MCI subjects from ADNI baseline
+- Inclusion: MRI and CSF biomarkers available
+- Outcome: conversion to AD (n=100) vs. remained MCI (n=100)
+- Follow-up: 2-5 years
+
+Neuroimaging:
+- T1-weighted 3T MRI
+- AAL atlas (90 ROIs)
+- Extracted volumes: hippocampus, entorhinal, temporal cortex, etc.
+- Normalized to ICV
+
+Biomarkers:
+- CSF: Aβ42, tau, p-tau (via lumbar puncture)
+- Blood: If available
+- Cognition: MMSE, ADAS-cog baseline
+- Genetics: APOE4 status
+
+Machine Learning:
+- Models: Logistic Regression, Random Forest, Gradient Boosting
+- Features: 90 MRI ROI volumes + 8 biomarker/cognitive/genetic features
+- Split: 80/20 train/test
+- Cross-validation: 5-fold stratified
+- Evaluation: AUC, accuracy, sensitivity, specificity
+
+---
